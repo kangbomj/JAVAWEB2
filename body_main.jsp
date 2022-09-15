@@ -1,9 +1,9 @@
 <%@ page contentType="text/html; charset=utf-8"%>
  <%-- CLASS는 스타일 적용시에 사용 되는 이름, 중첩 가능 --%>
 
-            <%! String greeting = "KANGBOMJ Shopping Mall";
-          String tagline = "Welcome to Web Market!";%>
-        <!--상단 페이지: 쇼핑몰 메인화면 문자열 홍길동님 하단페이지 :확인 ppt3 (9page)-->
+     	<%! String greeting = "Hello, We Are Boae.";
+          String tagline = "hello, We are Boae.";%>
+
         <div class="jumbotron">
             <div class="container">
                 <h1 class="display-3">
@@ -20,25 +20,18 @@
             <hr>
         </div>-->
  	<div class="card bg-dark text-white">
-    	<img src="image/cc.jpg" class="bag-img" alt="..." width="500px;" height="800px;">
+    	<img src="image/sad.jpg" class="sad-img" alt="..." width="100%;" height="80%;">
     	<div class="card-img-overlay">
     	<h5 class="card-title">어쩔티비</h5>
-    	<p class="card-text">출처 : 구찌</p>
+    	<p class="card-text">출처: 몰라</p>
   		</div>
   	</div>
 
 	<div class="list-group">
-      	<a href="#" class="list-group-item list-group-item-action active" aria-current="true">
-        	지포스 3060 시리즈
-      	</a>
-      	<a href="#" class="list-group-item list-group-item-action">지포스 3070 시리즈</a>
-      	<a href="#" class="list-group-item list-group-item-action active" aria-current="true">
-        	지포스 3060 시리즈
-      	</a>
-      	<a href="#" class="list-group-item list-group-item-action">지포스 3070 시리즈</a>
-        <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
-        	지포스 3060 시리즈
-      	</a>
-      	<a href="#" class="list-group-item list-group-item-action">지포스 3070 시리즈</a>
+      	<a href="#" class="list-group-item list-group-item-action">강보미 존 예</a>
+        <a href="#" class="list-group-item list-group-item-action">강보미 존 예</a>
+        <a href="#" class="list-group-item list-group-item-action">강보미 존 예</a>
+        <a href="#" class="list-group-item list-group-item-action">강보미 존 예</a>
+        <a href="#" class="list-group-item list-group-item-action">강보미 존 예</a>
     	</div>
 

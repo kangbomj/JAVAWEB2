@@ -2,10 +2,10 @@
     padding:0;
     margin:0;
 }
-
 .main_logo{
     text-align:center;
 }
+
 .main_logo .img-fluid{
     width:450px;
     height:500px;
@@ -14,16 +14,16 @@
 .dropdown .btn{
     background-color:black;
 }
+
 .container .navbar-header{
     text-align:right;
 }
+
 .container .navbar-header .navbar-brand{
     color: black;
-    
 }
 
 .jumbotron{
-    background-image:url(image/bg.jpg);
-    background-size:100%, 100%;
-    color:white;
+    background-image:url('image/bg2.jpg');
+    background-size:100%;
 }

@@ -24,12 +24,19 @@
 					Product product = listOfProducts.get(i);
 			%>
 			<div class="col-md-4">
-				<h3><%=product.getPname()%></h3>
-				<p><%=product.getDescription()%>
-				<p><%=product.getUnitPrice()%>원
+				<div class="card bg-dark text-white">
+                    <img src="image/product/<%=product.getProductId()%>.jpg" class="card-img" alt="...">
+                    <div class="card-img-overlay">
+                    <h5 class="card-title">그래픽 카드 이미지 샘플</h5>
+                    <p class="card-text">출처 : 구글 검색</p>
+                    </div>
+                    </div>
+			<h3><%=product.getPname()%></h3>
+			<p><%=product.getDescription()%>
+			<p><%=product.getUnitPrice()%>원
 			</div>
 			<%
-				}
+				} //반복문 끝
 			%>
 		</div>
 		<hr>

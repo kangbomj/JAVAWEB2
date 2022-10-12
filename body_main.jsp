@@ -15,8 +15,7 @@
 		</div>
 	</div>
 	<%
-		ProductRepository dao = ProductRepository.getInstance();
-		ArrayList<Product> listOfProducts = dao.getAllProducts();
+		ArrayList<Product> listOfProducts = productDAO.getAllProducts(); //리스트의 상품 전체 정보 얻어
 	%> 	
 	<div class="container">
 		<div class="row" align="center">
@@ -26,7 +25,7 @@
 			%>
 			<div class="col-md-4">
 				<div class="card bg-dark text-white">
-                    <img src="image/product/<%=product.getProductId()%>.jpg" class="card-img" alt="...">
+                    <img src="image/product/<%=product.getFilename()%>" class="card-img" alt="...">
                     <div class="card-img-overlay">
                     <h5 class="card-title">Wolchang Ring</h5>
                     <p class="card-text">출처 : 강보미</p>

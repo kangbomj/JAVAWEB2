@@ -17,14 +17,14 @@
 	MultipartRequest multi = new MultipartRequest(request, realFolder, maxSize, encType, policy);
 
 
-	String productId = multi.getParameter("productid”);
-	String name = multi.getParameter(“name”);
-	String unitPrice = multi.getParameter(“unitPrice”);
-	String description = multi.getParameter(“description”);
-	String manufacturer = multi.getParameter(“manufacturer”);
-	String category = multi.getParameter(“category”);
-	String unitsInStock = multi.getParameter(“unitsInStock”);
-	String condition = multi.getParameter(“condition”);
+	String productId = multi.getParameter("productid");
+	String name = multi.getParameter("name");
+	String unitPrice = multi.getParameter("unitPrice");
+	String description = multi.getParameter("description");
+	String manufacturer = multi.getParameter("manufacturer");
+	String category = multi.getParameter("category");
+	String unitsInStock = multi.getParameter("unitsInStock");
+	String condition = multi.getParameter("condition");
 
 	Integer price;
 
@@ -40,6 +40,11 @@
 	else
 		stock = Long.valueOf(unitsInStock);
 
+
+	Enumeration files = multi.getFileNames();
+	String fname = (String) files.nextElement();
+	String fileName = multi.getFilesystemName(fname);
+
 	ProductRepository dao = ProductRepository.getInstance();
 
 	Product newProduct = new Product();
@@ -51,6 +56,7 @@
 	newProduct.setCategory(category);
 	newProduct.setUnitsInStock(stock);
 	newProduct.setCondition(condition);
+	newProduct.setFilename(fileName);
 
 	dao.addProduct(newProduct);
 

@@ -29,7 +29,7 @@
 	response.sendRedirect("product_cart.jsp");
 -->
 
-<%
+<%	
 	String id = request.getParameter("cartId");
 	if (id == null || id.trim().equals("")) {
 		response.sendRedirect("product_cart.jsp");
@@ -57,4 +57,10 @@
 
 
 <!--session.getAttribute(String id = request.getParameter("id")); 이거아님 걍 내가 막 작성한거
-46번째 줄 getAttribute 을 session 에 저장된 속성반환하는거임. -->
+46번째 줄 getAttribute 을 session 에 저장된 속성반환하는거임.
+
+String id = request.getParameter("cartId");
+	if (id == null || id.trim().equals("")) {
+		response.sendRedirect("product_cart.jsp");
+		return;
+	}-->

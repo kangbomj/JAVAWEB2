@@ -1,0 +1,48 @@
+
+*{
+    padding:0;
+    margin:0;
+}
+
+.main_image{
+    text-align:center;
+    background-image: url("../image/gucciwoman.png");
+    display:block;
+    background-repeat:no-repeat;
+}
+
+.logo{
+    width:100%;
+    height:600px;
+    padding:20px;
+}
+
+.dropdown{
+    display:inline-block;
+    z-index:2;
+}
+
+.container {
+    display:inline-block;
+    z-index:2;
+}
+
+/*정렬 바꿨음 dropdown, container*/
+
+/*카테고리 버튼*/
+
+
+
+/*여기까즤*/
+.container .navbar-header{
+    text-align:center;
+    
+}
+
+.container .navbar-header .navbar-brand{
+    color: white;/*메뉴글씨색*/
+}
+
+.dropdown .btn {
+    background-color:black;
+}
